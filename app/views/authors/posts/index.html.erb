@@ -1,0 +1,9 @@
+<% provide(:page_title, 'All posts')%>
+<% provide(:author_active, 'active')%>
+
+<div class="row">
+  <% @posts.each do |post| %>
+    <%= render post %>
+  <% end %>
+</div>
+

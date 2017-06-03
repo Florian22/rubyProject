@@ -1,3 +1,3 @@
-class ApplicationController < ApplicationController
+class BlogController < ApplicationController
  
 end
