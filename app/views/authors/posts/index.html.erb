@@ -2,8 +2,15 @@
 <% provide(:author_active, 'active')%>
 
 <div class="row">
+<div> <%= link_to 'New post', new_authors_post_path%><div>
+<br>
+<table class="table table-striped">
+<tr>
+	<th>Title</th>
+</tr>
   <% @posts.each do |post| %>
     <%= render post %>
   <% end %>
+  </table>
 </div>
 
