@@ -2,6 +2,6 @@
 <% provide(:author_active, 'active')%>
 <h1>New Post</h1>
 
-<%= render 'form', post: @post %>
+<%= render 'form', post: @post, url: authors_posts_path %>
 
 <%= link_to 'Back', authors_posts_path %>
