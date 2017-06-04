@@ -17,7 +17,7 @@
       </li>
       <% if author_signed_in? %>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle #{yield(:author_active)}" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle <%= yield(:author_active) %>" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             User
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
