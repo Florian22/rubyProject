@@ -3,7 +3,7 @@ module Blog
     # GET /posts
     # GET /posts.json
     def index
-      @posts = Post.most_recent
+      @posts = Post.published.most_recent
     end
 
     # GET /posts/1

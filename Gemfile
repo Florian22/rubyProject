@@ -40,6 +40,9 @@ gem 'jquery-rails'
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 #devise for authentication
 gem 'devise'
+#keep knowing colum of the database
+#annotate --exclude tests,fixtures,factories,serializers
+gem 'annotate'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
