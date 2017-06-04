@@ -15,3 +15,14 @@
 //= require_tree .
 //= require jquery
 //= require bootstrap-sprockets
+
+// TinyMCE part/ HTML editor
+document.addEventListener("turbolinks:load",function(){
+		//remove old instances
+		tinymce.remove();
+		//init new instance
+		tinymce.init({ selector:'textarea#post_body',
+				plugins: "codesample image media link code",
+				toolbar: "undo redo | styleselect | bold italic link| codesample image media | code"
+		 });
+	})
