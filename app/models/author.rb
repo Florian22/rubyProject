@@ -38,7 +38,7 @@ class Author < ApplicationRecord
 		    if name.present?
 		      name
 		    else
-		      "Author"
+		      "User"
 		    end
 		  end
 

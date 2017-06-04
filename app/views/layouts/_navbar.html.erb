@@ -16,9 +16,10 @@
            <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
       </li>
       <% if author_signed_in? %>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown author-nav">
           <a class="nav-link dropdown-toggle <%= yield(:author_active) %>" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            User
+            <%= image_tag(current_author.gravatar_image_url)
+            <%= current_author.display_name %>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <%= link_to 'MyPosts', authors_posts_path, class: "dropdown-item" %>
