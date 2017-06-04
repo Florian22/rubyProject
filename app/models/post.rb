@@ -1,3 +1,20 @@
+# == Schema Information
+#
+# Table name: posts
+#
+#  id               :integer          not null, primary key
+#  title            :string
+#  body             :text
+#  label            :string
+#  slug             :string
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  banner_image_url :string
+#  author_id        :integer
+#  published        :boolean          default(FALSE)
+#  published_at     :datetime
+#
+
 class Post < ApplicationRecord
 	extend FriendlyId
   friendly_id :title, use: :slugged
