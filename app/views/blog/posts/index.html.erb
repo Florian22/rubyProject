@@ -6,7 +6,8 @@
     <%= render post %>
   <% end %>
 </div>
-<div class="row apple_pagination">
-	<%= will_paginate @posts, :container => false  %>
+<div class="row">
+	<div class="apple_pagination">
+		<%= will_paginate @posts, :container => false  %>
+	</div>
 </div>
-
