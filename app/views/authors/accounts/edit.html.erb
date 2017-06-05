@@ -1,9 +1,9 @@
 <!--Just to force commit-->
 <div class="row">
   <!-- Basic info section -->
-  <%= form_tag authors_info_path, method: :put do %>
+  <%= form_tag authors_info_path, class: "col-md-6", method: :put do %>
     <%= fields_for :author do |f| %>
-      <div class="col-md-6">
+      <!-- <div class="col-md-6" > -->
         <div class="card">
           <div class="card-block">
             <div class="card-title">
@@ -37,13 +37,13 @@
             </li>
           </ul>
         </div>
-      </div>
+      <!-- </div> -->
     <% end %>
   <% end %>
   <!-- Change password section -->
-  <%= form_tag authors_change_password_path, method: :put do %>
+  <%= form_tag authors_change_password_path, class: "col-md-6", method: :put do %>
     <%= fields_for :author do |f| %>
-      <div class="col-md-6">
+      <!-- <div class="col-md-6"> -->
         <div class="card">
           <div class="card-block">
             <div class="card-title">
@@ -74,7 +74,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      <!-- </div> -->
     <% end %>
   <% end %>
 </div>

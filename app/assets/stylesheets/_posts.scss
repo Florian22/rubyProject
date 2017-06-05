@@ -1,38 +1,38 @@
 .posts.index {
+  margin-left: 40px;
   .apple_pagination {
-  width: 100%;
-  background: #f1f1f1;
-  border: 1px solid #e5e5e5;
-  text-align: center;
-  padding: 1em;
-  cursor: default; }
-  .apple_pagination a, .apple_pagination span {
-    padding: 0.2em 0.3em; }
-  .apple_pagination .disabled {
-    color: #aaaaaa; }
-  .apple_pagination .current {
-    font-style: normal;
-    font-weight: bold;
-    background-color: #bebebe;
-    display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
-    line-height: 1.5;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    border-radius: 1em;
-    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
-  .apple_pagination a {
-    text-decoration: none;
-    color: black; }
+    width: 100%;
+    /*background: #f1f1f1;*/
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    padding: 1em;
+    cursor: default; }
+    .apple_pagination a, .apple_pagination span {
+      padding: 0.2em 0.3em; }
+    .apple_pagination .disabled {
+      color: #aaaaaa; }
+    .apple_pagination .current {
+      font-style: normal;
+      font-weight: bold;
+      background-color: #bebebe;
+      display: inline-block;
+      width: 1.4em;
+      height: 1.4em;
+      line-height: 1.5;
+      -moz-border-radius: 1em;
+      -webkit-border-radius: 1em;
+      border-radius: 1em;
+      text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
+    .apple_pagination a {
+      text-decoration: none;
+      color: black; }
     .apple_pagination a:hover, .apple_pagination a:focus {
-      text-decoration: underline; }
+        text-decoration: underline; }
   .card {
     border: none;
-    border-radius: 0;
     height: 400px;
     margin-bottom: 20px;
-    background-color: green;
+    background-color: $primary-color-light;
     .card-topper {
       height: 200px;
       width: 100%;
@@ -45,7 +45,7 @@
         font-size: 1.3rem;
         margin-bottom: 0;
         a {
-          color: black;
+          color: $primary-text-color;
           text-decoration: none;
         }
       }
@@ -58,14 +58,22 @@
       }
       .published-date {
         font-size: 0.8rem;
-        color: #787878;
+        color: $secondary-text-color;
         font-weight: 300;
         margin-top: 0.3rem;
         margin-bottom: 0.3rem;
       }
+      .post_author{
+        font-size: 0.9rem;
+        color: $secondary-text-color;
+        font-weight: 400;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        text-align: right;
+      }
       .card-text {
         font-size: 0.9rem;
-        color: black;
+        color: $primary-text-color;
       }
 
     }

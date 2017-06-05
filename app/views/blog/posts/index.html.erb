@@ -1,13 +1,19 @@
 <% provide(:page_title, 'All posts')%>
 <% provide(:blog_active, 'active')%>
 
-<div class="row">
-  <% @posts.each do |post| %>
-    <%= render post %>
-  <% end %>
-</div>
-<div class="row">
-	<div class="apple_pagination">
-		<%= will_paginate @posts, :container => false  %>
+<div class="col-md-10">
+	<div class="row">
+	  <% @posts.each do |post| %>
+	    <%= render post %>
+	  <% end %>
 	</div>
+	<% if will_paginate @posts %>
+		<div class="row">
+			<div class="apple_pagination">
+				<%= will_paginate @posts, :container => false  %>
+			</div>
+		</div>
+	<% end %>
+</div>
+<div class="col-md-2">
 </div>
